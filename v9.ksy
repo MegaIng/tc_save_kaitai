@@ -1,6 +1,6 @@
 meta:
-  id: v8
-  file-extension: v8
+  id: v9
+  file-extension: v9
   endian: le
 enums:
   component_kinds:
@@ -265,7 +265,7 @@ types:
         if: first_segment == 0b0010_0000
       - id: segments
         type: u1
-        repeat: until # techincally this should also consider first_segment. but the assumptions that the first segment is never 0 length should be valid
+        repeat: until # technically this should also consider first_segment. but the assumptions that the first segment is never 0 length should be valid
         repeat-until: (_ & 0x1F) == 0
         if: first_segment != 0b0010_0000
   wires:
@@ -290,7 +290,7 @@ types:
         type: u1
       - id: clock_speed
         type: u8
-      - id: dependecies
+      - id: dependencies
         type: seq_int
       - id: description
         type: string
