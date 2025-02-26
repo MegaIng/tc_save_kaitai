@@ -176,14 +176,20 @@ types:
         type: s8
       - id: name
         type: string
+  int_pair:
+    seq:
+      - id: key
+        type: s8
+      - id: value
+        type: s8
   static_states:
     seq:
       - id: count
         type: u2
       - id: states
-        type: s8
+        type: int_pair
         repeat: expr
-        repeat-expr: 2 * count
+        repeat-expr: count
   custom_comp_data:
     seq:
       - id: custom_id
