@@ -53,15 +53,15 @@ enums:
     46: com_constant
     47: com_splitter_word_2
     48: com_maker_word_2
-    49: com_punch_card
+    49: com_clz
     50: com_register_word_config
     51: com_ssd
     52: com_deleted_3
     53: com_ram_latency
-    54: com_pin_load
+    54: com_load_port
     55: com_delay_line_word
-    56: com_pin_store
-    57: com_file_loader
+    56: com_store_port
+    57: com_ctz
     58: com_cc_level_output
     59: com_level_gate
     60: com_level_input_1
