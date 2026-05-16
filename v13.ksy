@@ -1,6 +1,6 @@
 meta:
-  id: v10
-  file-extension: v10
+  id: v13
+  file-extension: v13
   endian: le
 enums:
   component_kinds:
@@ -249,9 +249,9 @@ types:
       - id: word_size
         type: s8
       - id: is_immutable
-        type: b1
+        type: u1
       - id: is_little_endian
-        type: b1
+        type: u1
       - id: init_data
         type: u1
         enum: init_data_kind
@@ -331,7 +331,7 @@ types:
         type: wires
 seq:
   - id: magic
-    contents: [0xA]
+    contents: [0xD]
   - id: body
     type: body
     #process: snappy

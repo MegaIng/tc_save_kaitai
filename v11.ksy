@@ -1,6 +1,6 @@
 meta:
-  id: v10
-  file-extension: v10
+  id: v11
+  file-extension: v11
   endian: le
 enums:
   component_kinds:
@@ -325,7 +325,7 @@ types:
         type: wires
 seq:
   - id: magic
-    contents: [0xA]
+    contents: [0xB]
   - id: body
     type: body
     #process: snappy

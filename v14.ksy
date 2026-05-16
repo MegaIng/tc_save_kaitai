@@ -1,6 +1,6 @@
 meta:
-  id: v10
-  file-extension: v10
+  id: v14
+  file-extension: v14
   endian: le
 enums:
   component_kinds:
@@ -249,13 +249,13 @@ types:
       - id: word_size
         type: s8
       - id: is_immutable
-        type: b1
+        type: u1
       - id: gate_variant
         type: s8 # if less than 0, choose the optimal one
       - id: delay_variant
         type: s8 # if less than 0, choose the optimal one. If both are <0, choose the minimal energy variant
       - id: is_little_endian
-        type: b1
+        type: u1
       - id: init_data
         type: u1
         enum: init_data_kind
