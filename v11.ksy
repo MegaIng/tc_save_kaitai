@@ -185,7 +185,7 @@ types:
       - id: offset
         type: s8
       - id: word_size
-        type: s64
+        type: s8
   int_pair:
     seq:
       - id: key
